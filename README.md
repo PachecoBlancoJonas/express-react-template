@@ -28,43 +28,48 @@ JWT_SECRET=[my-very-secret-key]
 
 NODE_ENV=development
 ```
+### 4. Configure **.env** files in `/frontend/.env`. Example variables needed:
 
-### 4. Install backend dependencies:
+```.env
+VITE_API_URL=http://localhost:5000
+```
+
+### 5. Install backend dependencies:
 
 ```bash
 cd backend && npm install
 ```
 
-### 5. Install frontend dependencies:
+### 6. Install frontend dependencies:
 
 ```bash
 cd ../frontend && npm install
 ```
 
-### 6. Give execute permissions to the database creation script:
+### 7. Give execute permissions to the database creation script:
 
 ```bash
 chmod +x create_db.sh
 ```
 
-### 7. Run the script to create the database, user, and users table:
+### 8. Run the script to create the database, user, and users table:
 
 ```bash
 ./create_db.sh
 ```
-### 8. Start backend express-server:
+### 9. Start backend express-server:
 
 ```bash
 cd backend && npm start
 ```
 
-### 9. Start development frontend vite-server:
+### 10. Start development frontend vite-server:
 
 ```bash
 cd ../frontend && npm run dev
 ```
 
-### 10. Visit [http://localhost:5173](http://localhost:5173) and enjoy ❤️
+### 11. Visit [http://localhost:5173](http://localhost:5173) and enjoy ❤️
 
 
 
@@ -74,6 +79,7 @@ cd ../frontend && npm run dev
 -   Using the free standard **JWT (JSON Web Token)** for authenticating users
 -   Through cookies with **cookie-parser**
 -   Using **dotenv** to manage environment variables
+-   mysql2 to manage SQL querys
 
 ## Frontend key libraries:
 
